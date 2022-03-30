@@ -55,10 +55,81 @@
         </tbody>
     </table>
 
+    <style>
+        .divClass{
+            padding: 40px;
+            color: white;
+            background-color: black;
+        }
+        .uppercase{
+            text-transform: uppercase;
+        }
+        #divId {
+            border: 15px solid red;
+            color: red;
+        }
+    </style>
+
+    <div class="divClass">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt similique omnis, dignissimos ducimus error distinctio ad reprehenderit ipsa debitis est porro rerum, blanditiis, accusamus quam dolor veritatis nam beatae dolorum?
+    </div>
+    <div class="uppercase" id="divId">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt similique omnis, dignissimos ducimus error distinctio ad reprehenderit ipsa debitis est porro rerum, blanditiis, accusamus quam dolor veritatis nam beatae dolorum?
+    </div>
+    <div class="divClass uppercase">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt similique omnis, dignissimos ducimus error distinctio ad reprehenderit ipsa debitis est porro rerum, blanditiis, accusamus quam dolor veritatis nam beatae dolorum?
+    </div>
+
+    <h3>Code Formatting</h3>
+    <pre>
+        <!-- pre-formatted code -->
+    some code
+    This is a block element
+    Don't need &lt;br&gt; tags to create new lines
+    The     pre     tag     care    about   white   space.
+    </pre>
+
+    <p>So if you want to do the <code>code formatting</code> inline, just use a pair of &lt;<code>code</code>&gt; tags.
+        <br>
+        However, it is not <code>white              space               sensitive</code>.    
+    </p>
+
+    <h3>Forms</h3>
+    <form action="" method="get">
+        <input name="person" type="text" value="Yc" placeholder="Enter your name"/>
+        <input name="email" type="email" value="" placeholder="Enter your email" required>
+        <input name="password" type="password" value="123456" placeholder="Enter your password"/>
+        <br>
+        <textarea name="address" cols="50" rows="10" placeholder="Input your text">Text text
+White space matters in  here    !!</textarea>
+
+        <button type="reset">Click me</button>
+        <button type="submit">Submit</button>
+
+        <div>
+            <select name="selected">
+                <option value="">-</option>
+                <option value="learn to code">A</option>
+                <option value="practice">B</option>
+                <option value="" disabled="disabled">- get an internship -</option>
+                <option value="get a job offer">C</option>
+                <option value="profit!">D</option>
+                <option value="default" selected>Selected by default</option>
+
+            </select>
+        </div>
+    </form>
+
+    <h3>Embedding a video</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <div id="bottom">
         <h3>You've reached the bottom!</h3>
         <a href="#top">Back to top</a>
+        <!-- <p><sup>&copy;</sup>2022</p> -->
+        <p>&copy; 2022</p>
     </div>
+
+
 </body>
 </html>
